@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TableViewCell.h"
+#import <QuartzCore/QuartzCore.h>
 @interface ViewController ()
 
 @end
@@ -66,7 +67,12 @@
     cell.backgroundColor=[UIColor clearColor];
     [cell.backgroundView setAlpha:0.35];
     [cell.contentView setOpaque:NO];
-    [cell.mainView setBackgroundColor:[UIColor redColor]];
+    
+    //code for rounded corners
+    cell.mainView.layer.cornerRadius=5;
+    cell.mainView.layer.masksToBounds=YES;
+    
+    [cell.mainView setBackgroundColor:[UIColor colorWithRed:0.5 green:2 blue:0.3 alpha:0.3]];
     if (indexPath.section%2==0)
     {
         [cell.image setImage:[UIImage imageNamed:@"a"]];
@@ -85,11 +91,14 @@
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   cell.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4];
+    //stuff for tranluscent cells
+    
+    cell.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4];
     
     [self.tableView.backgroundView setAlpha:0.5];
     [cell.backgroundView setAlpha:0.8];
     cell.contentView.backgroundColor = [UIColor clearColor];
+    
 }
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 //{
