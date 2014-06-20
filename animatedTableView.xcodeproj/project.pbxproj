@@ -14,13 +14,14 @@
 		7AD99F361954BC1B00BEBAC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F351954BC1B00BEBAC5 /* main.m */; };
 		7AD99F3A1954BC1B00BEBAC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F391954BC1B00BEBAC5 /* AppDelegate.m */; };
 		7AD99F3D1954BC1C00BEBAC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD99F3B1954BC1C00BEBAC5 /* Main.storyboard */; };
-		7AD99F401954BC1C00BEBAC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F3F1954BC1C00BEBAC5 /* ViewController.m */; };
 		7AD99F421954BC1C00BEBAC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD99F411954BC1C00BEBAC5 /* Images.xcassets */; };
 		7AD99F491954BC1C00BEBAC5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F481954BC1C00BEBAC5 /* XCTest.framework */; };
 		7AD99F4A1954BC1C00BEBAC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F291954BC1B00BEBAC5 /* Foundation.framework */; };
 		7AD99F4B1954BC1C00BEBAC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F2D1954BC1B00BEBAC5 /* UIKit.framework */; };
 		7AD99F531954BC1C00BEBAC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AD99F511954BC1C00BEBAC5 /* InfoPlist.strings */; };
 		7AD99F551954BC1C00BEBAC5 /* animatedTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F541954BC1C00BEBAC5 /* animatedTableViewTests.m */; };
+		7AD99F601954BCE800BEBAC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F5F1954BCE800BEBAC5 /* ViewController.m */; };
+		7AD99F631954C3AF00BEBAC5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD99F621954C3AF00BEBAC5 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		7AD99F381954BC1B00BEBAC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AD99F391954BC1B00BEBAC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7AD99F3C1954BC1C00BEBAC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7AD99F3E1954BC1C00BEBAC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7AD99F3F1954BC1C00BEBAC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7AD99F411954BC1C00BEBAC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7AD99F471954BC1C00BEBAC5 /* animatedTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animatedTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD99F481954BC1C00BEBAC5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7AD99F501954BC1C00BEBAC5 /* animatedTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "animatedTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		7AD99F521954BC1C00BEBAC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AD99F541954BC1C00BEBAC5 /* animatedTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animatedTableViewTests.m; sourceTree = "<group>"; };
+		7AD99F5E1954BCE800BEBAC5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		7AD99F5F1954BCE800BEBAC5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		7AD99F611954C3AF00BEBAC5 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		7AD99F621954C3AF00BEBAC5 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,13 @@
 		7AD99F2F1954BC1B00BEBAC5 /* animatedTableView */ = {
 			isa = PBXGroup;
 			children = (
+				7AD99F5E1954BCE800BEBAC5 /* ViewController.h */,
+				7AD99F5F1954BCE800BEBAC5 /* ViewController.m */,
 				7AD99F381954BC1B00BEBAC5 /* AppDelegate.h */,
 				7AD99F391954BC1B00BEBAC5 /* AppDelegate.m */,
 				7AD99F3B1954BC1C00BEBAC5 /* Main.storyboard */,
-				7AD99F3E1954BC1C00BEBAC5 /* ViewController.h */,
-				7AD99F3F1954BC1C00BEBAC5 /* ViewController.m */,
+				7AD99F611954C3AF00BEBAC5 /* TableViewCell.h */,
+				7AD99F621954C3AF00BEBAC5 /* TableViewCell.m */,
 				7AD99F411954BC1C00BEBAC5 /* Images.xcassets */,
 				7AD99F301954BC1B00BEBAC5 /* Supporting Files */,
 			);
@@ -249,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD99F401954BC1C00BEBAC5 /* ViewController.m in Sources */,
+				7AD99F601954BCE800BEBAC5 /* ViewController.m in Sources */,
+				7AD99F631954C3AF00BEBAC5 /* TableViewCell.m in Sources */,
 				7AD99F3A1954BC1B00BEBAC5 /* AppDelegate.m in Sources */,
 				7AD99F361954BC1B00BEBAC5 /* main.m in Sources */,
 			);
