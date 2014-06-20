@@ -29,8 +29,15 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"a"]]];
 
-
-
+    CGFloat rotationInDegrees=-15;
+    CGFloat rotationInRadians=rotationInDegrees*M_PI/180;
+    CGPoint offset=CGPointMake(-23, -23);
+    
+    CATransform3D transform=CATransform3DIdentity;
+    transform=CATransform3DRotate(transform, rotationInRadians, 0,0,1);
+    transform=CATransform3DTranslate(transform, offset.x, offset.y, 0);
+    self.initialTransformation=transform;
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

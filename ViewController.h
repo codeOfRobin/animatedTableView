@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UITableViewController
+@property (assign, nonatomic) CATransform3D initialTransformation;
 
 @end
