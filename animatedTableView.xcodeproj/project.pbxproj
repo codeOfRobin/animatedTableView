@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4CBFD11954F4BF009BC397 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4CBFD01954F4BF009BC397 /* QuartzCore.framework */; };
 		7AD99F2A1954BC1B00BEBAC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F291954BC1B00BEBAC5 /* Foundation.framework */; };
 		7AD99F2C1954BC1B00BEBAC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F2B1954BC1B00BEBAC5 /* CoreGraphics.framework */; };
 		7AD99F2E1954BC1B00BEBAC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F2D1954BC1B00BEBAC5 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A4CBFD01954F4BF009BC397 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7AD99F261954BC1B00BEBAC5 /* animatedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animatedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD99F291954BC1B00BEBAC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AD99F2B1954BC1B00BEBAC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4CBFD11954F4BF009BC397 /* QuartzCore.framework in Frameworks */,
 				7AD99F2C1954BC1B00BEBAC5 /* CoreGraphics.framework in Frameworks */,
 				7AD99F2E1954BC1B00BEBAC5 /* UIKit.framework in Frameworks */,
 				7AD99F2A1954BC1B00BEBAC5 /* Foundation.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		7AD99F281954BC1B00BEBAC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A4CBFD01954F4BF009BC397 /* QuartzCore.framework */,
 				7AD99F291954BC1B00BEBAC5 /* Foundation.framework */,
 				7AD99F2B1954BC1B00BEBAC5 /* CoreGraphics.framework */,
 				7AD99F2D1954BC1B00BEBAC5 /* UIKit.framework */,
@@ -462,6 +466,7 @@
 				7AD99F5A1954BC1C00BEBAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AD99F5B1954BC1C00BEBAC5 /* Build configuration list for PBXNativeTarget "animatedTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +475,7 @@
 				7AD99F5D1954BC1C00BEBAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

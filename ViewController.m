@@ -106,6 +106,10 @@
     [cell.backgroundView setAlpha:0.8];
     cell.contentView.backgroundColor = [UIColor clearColor];
     
+    UIView *card=[(TableViewCell *)cell mainView];
+    card.layer.transform=self.initialTransformation;
+    card.layer.opacity=0.8;
+    
 }
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 //{
