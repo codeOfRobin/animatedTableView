@@ -29,12 +29,13 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"a"]]];
 
-    CGFloat rotationInDegrees=-15;
+    CGFloat rotationInDegrees=-180;
     CGFloat rotationInRadians=rotationInDegrees*M_PI/180;
-    CGPoint offset=CGPointMake(-23, -23);
+    CGPoint offset=CGPointMake(20,-20);
     
     CATransform3D transform=CATransform3DIdentity;
-    transform=CATransform3DRotate(transform, rotationInRadians, 0,0,1);
+    transform=CATransform3DRotate(transform, rotationInRadians, 0,1,0);
+
     transform=CATransform3DTranslate(transform, offset.x, offset.y, 0);
     self.initialTransformation=transform;
     
@@ -109,6 +110,13 @@
     UIView *card=[(TableViewCell *)cell mainView];
     card.layer.transform=self.initialTransformation;
     card.layer.opacity=0.8;
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        card.layer.transform = CATransform3DIdentity;
+        card.layer.opacity = 1;
+        card.layer.transform=self.initialTransformation;
+        card.layer.transform=CATransform3DIdentity;
+    }];
     
 }
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
