@@ -1,19 +1,18 @@
 //
-//  ViewController.m
+//  pinchToExpandTableViewController.m
 //  animatedTableView
 //
-//  Created by Robin Malhotra on 21/06/14.
+//  Created by Robin Malhotra on 25/06/14.
 //  Copyright (c) 2014 Robin's code kitchen. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "TableViewCell.h"
-#import <QuartzCore/QuartzCore.h>
-@interface ViewController ()
+#import "pinchToExpandTableViewController.h"
+
+@interface pinchToExpandTableViewController ()
 
 @end
 
-@implementation ViewController
+@implementation pinchToExpandTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,17 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"a"]]];
-    
-    CGFloat rotationInDegrees=-180;
-    CGFloat rotationInRadians=rotationInDegrees*M_PI/180;
-    CGPoint offset=CGPointMake(20,-20);
-    
-    CATransform3D transform=CATransform3DIdentity;
-    transform=CATransform3DRotate(transform, rotationInRadians, 1,1,1);
-    transform=CATransform3DTranslate(transform, offset.x, offset.y, 0);
-    self.initialTransformation=transform;
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -56,74 +44,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 6;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    [cell.backgroundView setOpaque:NO];
-    cell.backgroundColor=[UIColor clearColor];
-    [cell.backgroundView setAlpha:0.35];
-    [cell.contentView setOpaque:NO];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    //code for rounded corners
-    cell.mainView.layer.cornerRadius=5;
-    cell.mainView.layer.masksToBounds=YES;
-    
-    [cell.mainView setBackgroundColor:[UIColor colorWithRed:0.5 green:2 blue:0.3 alpha:0.3]];
-    if (indexPath.section%2==0)
-    {
-        [cell.image setImage:[UIImage imageNamed:@"a"]];
-        [cell.textLabel setText:@"something"];
-    }
-    else
-    {
-        [cell.image setImage:[UIImage imageNamed:@"b"]];
-        [cell.textLabel setText:@"fuck textile"];
-        
-    }
     // Configure the cell...
     
     return cell;
 }
-
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //stuff for tranluscent cells
-    
-    cell.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.4];
-    
-    [self.tableView.backgroundView setAlpha:0.5];
-    [cell.backgroundView setAlpha:0.8];
-    cell.contentView.backgroundColor = [UIColor clearColor];
-    
-    UIView *card=[(TableViewCell *)cell mainView];
-    card.layer.transform=self.initialTransformation;
-    card.layer.opacity=0.1;
-    
-    [UIView animateWithDuration:1 animations:^{
-        card.layer.transform = CATransform3DIdentity;
-        card.layer.opacity = 1;
-        card.layer.transform=self.initialTransformation;
-        card.layer.transform=CATransform3DIdentity;
-    }];
-    
-}
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    UIView *headerView = [[UIView alloc] init];
-//    headerView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"c"]];
-//    return headerView;
-//}
+*/
 
 /*
 // Override to support conditional editing of the table view.

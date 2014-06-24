@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A4CBFD11954F4BF009BC397 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4CBFD01954F4BF009BC397 /* QuartzCore.framework */; };
+		7A61F9841959FF2300A77A27 /* pinchToExpandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A61F9831959FF2300A77A27 /* pinchToExpandTableViewController.m */; };
 		7AD99F2A1954BC1B00BEBAC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F291954BC1B00BEBAC5 /* Foundation.framework */; };
 		7AD99F2C1954BC1B00BEBAC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F2B1954BC1B00BEBAC5 /* CoreGraphics.framework */; };
 		7AD99F2E1954BC1B00BEBAC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD99F2D1954BC1B00BEBAC5 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		7A4CBFD01954F4BF009BC397 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A61F9821959FF2300A77A27 /* pinchToExpandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinchToExpandTableViewController.h; sourceTree = "<group>"; };
+		7A61F9831959FF2300A77A27 /* pinchToExpandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinchToExpandTableViewController.m; sourceTree = "<group>"; };
 		7AD99F261954BC1B00BEBAC5 /* animatedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animatedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD99F291954BC1B00BEBAC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AD99F2B1954BC1B00BEBAC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				7AD99F381954BC1B00BEBAC5 /* AppDelegate.h */,
 				7AD99F391954BC1B00BEBAC5 /* AppDelegate.m */,
 				7AD99F3B1954BC1C00BEBAC5 /* Main.storyboard */,
+				7A61F9821959FF2300A77A27 /* pinchToExpandTableViewController.h */,
+				7A61F9831959FF2300A77A27 /* pinchToExpandTableViewController.m */,
 				7AD99F611954C3AF00BEBAC5 /* TableViewCell.h */,
 				7AD99F621954C3AF00BEBAC5 /* TableViewCell.m */,
 				7AD99F411954BC1C00BEBAC5 /* Images.xcassets */,
@@ -260,6 +265,7 @@
 			files = (
 				7AD99F601954BCE800BEBAC5 /* ViewController.m in Sources */,
 				7AD99F631954C3AF00BEBAC5 /* TableViewCell.m in Sources */,
+				7A61F9841959FF2300A77A27 /* pinchToExpandTableViewController.m in Sources */,
 				7AD99F3A1954BC1B00BEBAC5 /* AppDelegate.m in Sources */,
 				7AD99F361954BC1B00BEBAC5 /* main.m in Sources */,
 			);
