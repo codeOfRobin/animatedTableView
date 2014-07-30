@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>6984D81F-E56C-4145-B5AE-CF167A7A24DD</string>
+=======
+	<string>2AB5C966-674B-43D5-A7C6-0C9422A36897</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectName</key>
 	<string>animatedTableView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>0A852BCC-62B3-4567-90EF-1523C2873A2E</key>
+=======
+		<key>1C6AA668-928F-4A84-A6DD-A8A8978E5A45</key>
+>>>>>>> FETCH_HEAD
 		<string>https://github.com/codeofRobin/animatedTableView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>animatedTableView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>0A852BCC-62B3-4567-90EF-1523C2873A2E</key>
+=======
+		<key>1C6AA668-928F-4A84-A6DD-A8A8978E5A45</key>
+>>>>>>> FETCH_HEAD
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>0A852BCC-62B3-4567-90EF-1523C2873A2E</string>
+=======
+	<string>1C6AA668-928F-4A84-A6DD-A8A8978E5A45</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>0A852BCC-62B3-4567-90EF-1523C2873A2E</string>
+=======
+			<string>1C6AA668-928F-4A84-A6DD-A8A8978E5A45</string>
+>>>>>>> FETCH_HEAD
 			<key>IDESourceControlWCCName</key>
 			<string>animatedTableView</string>
 		</dict>

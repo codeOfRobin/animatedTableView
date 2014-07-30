@@ -34,7 +34,7 @@
     CGPoint offset=CGPointMake(20,-20);
     
     CATransform3D transform=CATransform3DIdentity;
-    transform=CATransform3DRotate(transform, rotationInRadians, 1,1,1);
+    transform=CATransform3DRotate(transform, rotationInRadians, 0,1,0);
     transform=CATransform3DTranslate(transform, offset.x, offset.y, 0);
     self.initialTransformation=transform;
     
@@ -110,7 +110,7 @@
     card.layer.transform=self.initialTransformation;
     card.layer.opacity=0.1;
     
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         card.layer.transform = CATransform3DIdentity;
         card.layer.opacity = 1;
         card.layer.transform=self.initialTransformation;
