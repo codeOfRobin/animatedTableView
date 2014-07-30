@@ -71,7 +71,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 6;
+    return 10;
 }
 #pragma mark - Handling pinches
 
